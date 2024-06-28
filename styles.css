@@ -13,6 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #444;
+    text-align: center;
 }
 
 .container {
@@ -20,11 +21,9 @@ body {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
     width: 90%;
     max-width: 400px;
     animation: fadeIn 1s ease-in-out;
-    margin-top: 20px;
 }
 
 @keyframes fadeIn {
@@ -74,11 +73,12 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 .result {
@@ -107,4 +107,3 @@ footer:hover {
     background-color: #444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
