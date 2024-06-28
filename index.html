@@ -18,10 +18,13 @@
         <footer>&copy; 2024 Cek Khodam Vrohh By Furrr</footer>
     </div>
 
-
     <script>
         function cekKhodam() {
             var nama = document.getElementById('nama').value;
+            if (nama.trim() === "") {
+                alert("Nama harus diisi!");
+                return;
+            }
             var khodams = [
                 "Jin", "Malaikat", "Roh Leluhur", "Penjaga Gaib", "Khodam Pendamping", 
                 "Dewa", "Dewi", "Peri", "Siluman", "Naga", 
